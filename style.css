@@ -1,3 +1,13 @@
+body {
+  /* margin-left: 500px; */
+  /* background-color: #531F62; */
+    /* background-size: cover; */
+    /* padding-top: 83px;
+    padding-bottom: 60px; */
+    /* margin-left: 500px; */
+    margin: 0;
+}
+
 header {
   height: 83px;
     position: fixed;
@@ -13,29 +23,34 @@ header {
 }
 
 
-body {
-  margin-left: 500px;
-  background-color: #531F62;
-    background-size: cover;
-    padding-top: 83px;
-    padding-bottom: 60px;
-    margin-left: 500px;
-    margin-right: -1px;
+.img2 {
+  background-image: url("resources/background.jpg");
+  background-size: cover;
+  text-align: center;
 }
 
-img {
+
+
+.logo img {
   position: relative;
   height: 200px;
   width: 300px;
-  align-self: center;  
+  align-self: center;
+}
+.laptop {
+  position: relative;
+  height: 200px;
+  width: 300px;
+  align-self: center; 
+  padding-top: 200px; 
 }
 
 h1 {
-  position: relative;
+  /* position: relative; */
   font-size: xx-large ;
   color: white;
-  font: 70px Roboto, sans-serif;
-  margin-left: -200px;
+  font: 70px "Roboto", sans-serif;
+  /* margin-left: -200px; */
 }
 
 h3 {
@@ -43,14 +58,14 @@ h3 {
   color: white;
   font: 18px Roboto, sans-serif;
   margin: 0px 400px 30px;
-  margin-left: -100px;
+  /* margin-left: -100px; */
 }
 
 .btn {
-  position: absolute;
+  position: relative;
   z-index: 70;
   top: 100px;
-  right: 20px;
+  left: 860px;
   display: inline-block;
   background: transparent;
   border-radius: 3px;
@@ -65,7 +80,8 @@ h3 {
   box-shadow: inset 0px 0px 0px 1px #fff;
   border: 1px solid transparent;
   color: #ffffff;
-  margin-right: 100px;
+  /* margin-right: auto;
+  margin-left: auto; */
 }
 
 .menu {
@@ -75,6 +91,17 @@ h3 {
   z-index: 90px;
   height: 300px;
   size: 800px;
+}
+
+.menu ul{
+  display: flex;
+  flex-direction: row;
+  color: white;
+}
+
+.menu ul li {
+  list-style: none;
+  margin-right: 20px;
 }
 
 .btn2 {
@@ -93,4 +120,19 @@ h3 {
     border: 1px solid transparent;
     background-clip: padding-box;
     color: #ffffff;
+    cursor: pointer;
+}
+
+.feature {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 40px;
+  margin: 60px 0;
 }
